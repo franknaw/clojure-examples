@@ -2,7 +2,7 @@
 
 
 Call to generate the excel file.
-`(notional.reserve-dlpp/gen-dlpp-reserve-files {:file-count 1 :record-count 10 :ssn-count 3})`
+* `(notional.reserve-dlpp/gen-dlpp-reserve-files {:file-count 1 :record-count 10 :ssn-count 3})`
 
 
 Example run to just print the records.
