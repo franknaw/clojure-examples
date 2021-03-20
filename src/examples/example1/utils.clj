@@ -45,7 +45,6 @@
 (defn gen-tin "" []
   (str (rand-nth ["D" "S"]) (r-int-in-range 1 99)))
 
-;;(aicig-notional.utility/gen-start-stop-dt (aicig-notional.utility/gen-date))
 (defn gen-start-stop-dt "" [date]
   {:start_dt
             (time-format/unparse
