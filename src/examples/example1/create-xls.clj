@@ -2,7 +2,7 @@
   (:require [notional.utility :as util]
             [dk.ative.docjure.spreadsheet :as xls]))
 
-(defn gen--dlpp-record
+(defn gen-dlpp-record
   "Generate a DLPP reserve notional record." [data]
   (let [strop (util/gen-start-stop-dt (util/gen-date))]
     {:voucher-dt  (util/format-yyyy-MM-dd (util/gen-date))
@@ -39,7 +39,7 @@
                      #(gen--dlpp-record data2)))]
         (merge rec1 rec2)))))
 
-(defn gen--dlpp-file-data
+(defn gen-dlpp-file-data
   "Generate DLPP reserve notional records, formatted as XLS data."
   [counts]
   (let [columns [:voucher-dt "VOUCHER_DT"
