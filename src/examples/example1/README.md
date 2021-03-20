@@ -5,7 +5,7 @@ Call to generate the excel file.
 * `(notional.reserve-dlpp/gen-dlpp-reserve-files {:file-count 1 :record-count 10 :ssn-count 3})`
 
 
-Example run to just print the records.
+Example run to just print the records to the REPL.
 ```
 (notional.reserve-dlpp/gen-dlpp-file-data {:file-count 1 :record-count 4 :ssn-count 10})
 =>
